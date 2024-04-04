@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--main calor-->
+    <color name="black">#344955</color>
+    <!--main calor-->
+
+    <color name="holid">#F9AA33</color>
+
+    <color name="white">#FFFFFFFF</color>
+</resources>

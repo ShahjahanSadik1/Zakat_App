@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+                android:layout_gravity="center"
+                >
+
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="15dp"
+        android:id="@+id/smartSlider"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:id="@+id/out"
+        android:weightSum="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="15dp"
+        >
+
+        <LinearLayout
+            android:paddingRight="5dp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/bmiImage1"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:clickable="true"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="basin"
+                app:neumorph_strokeColor="@color/black"
+                app:neumorph_strokeWidth="@dimen/cardview_default_radius"
+                app:neumorph_backgroundColor="#ffffff"
+               >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/bmiImage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/what_icon"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত কি?"
+                        android:layout_below="@+id/bmiImage"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/jor3"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:clickable="true"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="basin"
+
+                app:neumorph_backgroundColor="#ffffff"
+                app:neumorph_strokeColor="@color/black"
+                app:neumorph_strokeWidth="@dimen/cardview_default_radius">
+
+
+                <!--Relative 2 >>>>>>>>>>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="109dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/jor"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/zakater_khate"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/jor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:text="যাকাতের খাত সমূহ"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+                <!--Relative 2<<<<<<<<<<<<<<<<<<<-->
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/id_celsius2"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:clickable="true"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="basin"
+                app:neumorph_lightSource="rightTop"
+
+                app:neumorph_backgroundColor="#ffffff"
+                app:neumorph_strokeColor="@color/black"
+                app:neumorph_strokeWidth="@dimen/cardview_default_radius">
+
+
+                <!--Relative 1>>>>>>>>>>>>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/id_celsius"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/zakat_icon"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="যাকাত কেন ফরজ?"
+                        android:layout_below="@+id/id_celsius"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+
+
+
+
+                </RelativeLayout>
+                <!--Relative 1<<<<<<<<<<<<<-->
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/tranSac4"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:clickable="true"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="basin"
+                app:neumorph_lightSource="rightTop"
+
+                app:neumorph_backgroundColor="#ffffff"
+                app:neumorph_strokeColor="@color/black"
+                app:neumorph_strokeWidth="@dimen/cardview_default_radius">
+
+
+                <!--Relative 2 >>>>>>>>>>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:orientation="vertical"
+                    android:layout_weight="10"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/tranSac"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/message_icon"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" যাকাত সংক্রান্ত প্রশ্নসমূহ"
+                        android:layout_below="@id/tranSac"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:layout_marginTop="1dp"
+                        />
+
+
+
+
+
+
+                </RelativeLayout>
+                <!--Relative 2<<<<<<<<<<<<<<<<<<<-->
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+    <!--Home Layout main-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <LinearLayout
+        android:id="@+id/layout_video"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:orientation="vertical"
+        android:background="#F4EFEF"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            >
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                />
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/imagegon"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/zakat_one"
+                android:scaleType="centerCrop"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:elevation="5dp"
+                 android:layout_margin="10dp"
+                 >
+
+<!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <LinearLayout
+                     android:id="@+id/lay_one"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     >
+
+
+                     <ImageView
+                         android:layout_width="130dp"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/zakat_one"
+                         />
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         style="@style/zakat1"
+                         />
+
+
+                 </LinearLayout>
+
+
+
+             </androidx.cardview.widget.CardView>
+
+
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:elevation="5dp"
+                 android:layout_margin="10dp"
+                 >
+
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <LinearLayout
+                     android:id="@+id/lay_two"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     >
+
+
+                     <ImageView
+                         android:layout_width="130dp"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/zakat_two"
+                         />
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         style="@style/zakat2"
+                         />
+
+
+                 </LinearLayout>
+
+
+
+             </androidx.cardview.widget.CardView>
+
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:elevation="5dp"
+                 android:layout_margin="10dp"
+                 >
+
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <LinearLayout
+                     android:id="@+id/lay_there"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     >
+
+
+                     <ImageView
+                         android:layout_width="130dp"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/zakat_trere"
+                         />
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         style="@style/zakat1"
+                         />
+
+
+                 </LinearLayout>
+
+
+
+             </androidx.cardview.widget.CardView>
+
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:elevation="5dp"
+                 android:layout_margin="10dp"
+                 >
+
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <LinearLayout
+                     android:id="@+id/lay_four"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     >
+
+
+                     <ImageView
+                         android:layout_width="130dp"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/zakat_four"
+                         />
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         style="@style/zakat4"
+                         />
+
+
+                 </LinearLayout>
+
+
+
+             </androidx.cardview.widget.CardView>
+
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp"
+                 android:elevation="5dp"
+                 android:layout_margin="10dp"
+                 >
+
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <!--jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj-->
+                 <LinearLayout
+                     android:id="@+id/lay_five"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal"
+                     >
+
+
+                     <ImageView
+                         android:layout_width="130dp"
+                         android:layout_height="match_parent"
+                         android:src="@drawable/zakat_five"
+                         />
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         style="@style/zakat5"
+                         />
+
+
+                 </LinearLayout>
+
+
+
+             </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+    <!--Video layout Video Layout -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--botton Navigation bar-->
+    <!--botton Navigation bar-->
+    <!--botton Navigation bar-->
+    <!--botton Navigation bar-->
+    <!--botton Navigation bar-->
+    <!--botton Navigation bar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!--botton Navigation bar-->
+        <!--botton Navigation bar-->
+        <LinearLayout
+            android:weightSum="3"
+            android:id="@+id/lain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/home_lay"
+                android:layout_weight="1"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_24_icon"
+
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/home_24_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="10dp"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_24_icon"
+                android:padding="15dp"
+                android:orientation="vertical"
+                >
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/video_lay"
+                android:layout_weight="1"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_24_icon"
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/video_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Video"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"/>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <!--botton Navigation bar-->
+        <!--botton Navigation bar-->
+
+
+        <ImageView
+            android:id="@+id/bit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="23dp"
+            android:rotation="45"
+            android:src="@drawable/bitto" />
+
+        <RelativeLayout
+            android:id="@+id/calculator_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+           android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:rotation="45"
+
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shape"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotation="134"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/calculator_icon"
+                    android:padding="10dp"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+
